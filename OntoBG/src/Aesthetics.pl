@@ -69,7 +69,7 @@ instinct(colorAppreciation).
 instinct(communication).
 instinct(aggressiveness).
 
-/* relations */
+/* generalizations */
 generalization(emotion(dislike),emotion(disgust)).
 generalization(emotion(repugnance),emotion(disgust)).
 generalization(emotion(distaste),emotion(disgust)).

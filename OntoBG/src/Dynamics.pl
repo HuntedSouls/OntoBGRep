@@ -1,40 +1,85 @@
 /*intention of use*/
-dynamic(indirectEffect).
-dynamic(resourceExtinction).
-dynamic(reduceOptions).
-dynamic(acquireInformation).
-dynamic(combo).
-dynamic(gameStateChange).
-dynamic(deduction).
-dynamic(blocking).
-dynamic(sacrifice).
+dynamics(indirectEffect).
+dynamics(resourceExtinction).
+dynamics(reduceOptions).
+dynamics(acquireInformation).
+dynamics(combo).
+dynamics(gameStateChange).
+dynamics(deduction).
+dynamics(blocking).
+dynamics(sacrifice).
 
 /*grouping*/
-dynamic(oneVersusAll).
-dynamic(alliance).
-dynamic(allVersusOne).
+dynamics(oneVersusAll).
+dynamics(alliance).
+dynamics(allVersusOne).
 
 /*metagame*/
-dynamic(intimidate).
-dynamic(convince).
-dynamic(bluffing).
-dynamic(distraction).
-dynamic(countResources).
+dynamics(intimidate).
+dynamics(convince).
+dynamics(bluffing).
+dynamics(distraction).
+dynamics(countResources).
 
 /*playing patterns*/
-dynamic(safePlay).
-dynamic(riskPlay).
-dynamic(camping).
-dynamic(survival).
-dynamic(protectionism).
+dynamics(safePlay).
+dynamics(riskPlay).
+dynamics(camping).
+dynamics(survival).
+dynamics(protectionism).
 
 /*strategic choices*/
-dynamic(humanShield).
-dynamic(rushTheGame).
-dynamic(actionPlanning).
-dynamic(flexibleStrategy).
-dynamic(rejectObjectives).
+dynamics(humanShield).
+dynamics(rushTheGame).
+dynamics(actionPlanning).
+dynamics(flexibleStrategy).
+dynamics(rejectObjectives).
 
 /* loose ones */
-dynamic(forcefullInterpretation).
-dynamic(selfObjective).
+dynamics(forcefullInterpretation).
+dynamics(selfObjective).
+
+/* categories */
+dynamicsCategory(intentionOfUse).
+dynamicsCategory(actionBased).
+dynamicsCategory(metaGame).
+dynamicsCategory(playingPatterns).
+dynamicsCategory(strategicChoices).
+dynamicsCategory(behaviour).
+
+/* generalizations */
+generalization(dynamics(blocking),dynamicsCategory(itentionOfUse)).
+generalization(dynamics(combo),dynamicsCategory(itentionOfUse)).
+generalization(dynamics(gameStateChange),dynamicsCategory(itentionOfUse)).
+generalization(dynamics(acquireInformation),dynamics(indirectEffect)).
+generalization(dynamics(reduceOptions),dynamicsCategory(itentionOfUse)).
+generalization(dynamics(indirectEffect),dynamicsCategory(itentionOfUse)).
+generalization(dynamics(resourceExtinction),dynamicsCategory(itentionOfUse)).
+
+generalization(dynamics(countResources),dynamicsCategory(metaGame)).
+generalization(dynamics(distraction),dynamicsCategory(itentionOfUse)).
+generalization(dynamics(convince),dynamicsCategory(itentionOfUse)).
+generalization(dynamics(intimidate),dynamicsCategory(itentionOfUse)).
+generalization(dynamics(bluffing),dynamics(convince)).
+
+generalization(dynamics(rejectObjectives),dynamicsCategory(strategicChoices)).
+generalization(dynamics(rushTheGame),dynamicsCategory(strategicChoices)).
+generalization(dynamics(flexibleStrategy),dynamicsCategory(strategicChoices)).
+generalization(dynamics(humanShield),dynamicsCategory(strategicChoices)).
+generalization(dynamics(actionPlanning),dynamicsCategory(strategicChoices)).
+
+generalization(dynamics(protectionism),dynamicsCategory(playingPatterns)).
+generalization(dynamics(camping),dynamicsCategory(playingPatterns)).
+generalization(dynamics(survival),dynamicsCategory(playingPatterns)).
+generalization(dynamics(riskPlay),dynamicsCategory(playingPatterns)).
+generalization(dynamics(safePlay),dynamicsCategory(playingPatterns)).
+
+generalization(dynamics(sacrifice),dynamicsCategory(actionBased)).
+
+generalization(dynamics(alliance),dynamics(grouping)).
+generalization(dynamics(oneVersusAll),dynamics(grouping)).
+generalization(dynamics(alliance),dynamics(allVersusOne)).
+
+generalization(dynamicsCategory(intentionOfUse),dynamicsCategory(actionBased)).
+generalization(dynamicsCategory(playingPatterns),dynamicsCategory(behaviour)).
+generalization(dynamicsCategory(strategicChoices),dynamicsCategory(behaviour)).
