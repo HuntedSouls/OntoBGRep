@@ -37,3 +37,5 @@ mdRelation(mechanics(goals),dynamics(alliance)).
 mdRelation(mechanics(resources),dynamics(resourceExtinction)).
 
 mdRelation(mechanics(action),dynamics(actionPlanning)).
+
+/*MDRelations rules*/

@@ -1,0 +1,14 @@
+/*
+consult(Aesthetics).
+consult(Dynamics).
+consult(mech).
+consult(MDRelates).
+consult(DARelates).
+consult(rules).
+*/
+[aesthetics].
+[dynamics].
+[mech].
+[mdrelates].
+[darelates].
+[rules].

@@ -1,6 +1,10 @@
+discontiguous(daRelation/2).
+discontiguous(mdRelation/2).
+
 generalization(call(A,A1),call(B,B1)):- A\=B,A1\=B1.
 
 generalization(A,B):- generalization(A,C),generalization(C,B).
+
 
 mdRelation(A,B):-generalization(C,A),mdRelation(C,B).
 mdRelation(A,B):-generalization(C,B),mdRelation(A,C).
@@ -23,8 +27,10 @@ mechHasDyn(Mech,[D|Ds]):-(Mech, D, mdRelation(Mech,D)) ; mechHasDyn(Mech,Ds).
 allMechHasDyn([],_).
 allMechHasDyn([M|Ms],D):- mechHasDyn(M,D), allMechHasDyn(Ms,D). 
 
+
+dynHasAest(Dyn, [A|As]):-(Dyn, A, daRelation(Dyn,A)) ; dynHasAest(Dyn,As).
 allDynHasAest([],_).
-dynHasAest(Dyn, [A|As]):-(Dyn, A, daRelation(Dyn,A)) ; dynHasAest(Dyn,Ass).
 allDynHasAest([D|Ds],A):- dynHasAest(D,A), allDynHasAest(Ds,A).
 
-isGame(_,M,D,A) :- mechIsThere(M),dynIsThere(D),aestIsThere(A), allMechHasDyn(M,D), allDynHasAest(D,A)
+isGame(_,M,D,A) :- mechIsThere(M),dynIsThere(D),aestIsThere(A), allMechHasDyn(M,D), allDynHasAest(D,A).
+

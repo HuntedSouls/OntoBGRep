@@ -1,4 +1,4 @@
-mechanics(algorith).
+mechanics(algorithm).
 
 mechanics(action).
 
