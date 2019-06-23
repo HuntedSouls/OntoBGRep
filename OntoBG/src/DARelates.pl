@@ -116,4 +116,8 @@ daRelation(dynamics(resourceExtinction),emotion(aversion)).
 
 /* DARelations rules */
 
+daRelation(A,B):-generalization(C,A),daRelation(C,B).
+daRelation(A,B):-generalization(C,B),daRelation(A,C).
+
+/*daRelation(A,B):-partof(B,C), daRelation(C,A).*/
 

@@ -39,3 +39,5 @@ mdRelation(mechanics(resources),dynamics(resourceExtinction)).
 mdRelation(mechanics(action),dynamics(actionPlanning)).
 
 /*MDRelations rules*/
+mdRelation(A,B):-generalization(C,A),mdRelation(C,B).
+mdRelation(A,B):-generalization(C,B),mdRelation(A,C).

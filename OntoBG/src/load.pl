@@ -6,9 +6,13 @@ consult(MDRelates).
 consult(DARelates).
 consult(rules).
 */
-[aesthetics].
-[dynamics].
-[mech].
-[mdrelates].
-[darelates].
-[rules].
+/*
+:- [ 'Aesthetics.pl',
+    'Dynamics.pl',
+    'mech.pl',
+   'MDRelates.pl',
+   'DARelates.pl',
+    "rules.pl"
+].
+*/
+:- [mech, rules, asthetics, dynamics, mDRelates, dARelates ].
