@@ -1,8 +1,13 @@
+/*
+generalization(call(A,A1),call(B,B1)):- A\=B,A1\=B1. pq eu fiz isso??? @?@ talvez constraint??
 
-generalization(call(A,A1),call(B,B1)):- A\=B,A1\=B1.
-
+generalization(A,B) = A is specific of B, or B is more general than A
+*/
 generalization(A,B):- generalization(A,C),generalization(C,B).
 
+/*
+partof(A,B) = A is part of B
+*/
 
 mechIsThere([]).
 mechIsThere([M|Ms]):-M,mechIsThere(Ms).
