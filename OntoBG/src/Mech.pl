@@ -103,8 +103,8 @@ generalization(mechanics(actionPoint),mechanics(resources)).
 generalization(mechanics(actionCard),mechanics(resources)).
 
 generalization(mechanics(teams),mechanics(ruleset)).
-generalization(mechanics(phase),mechanics(algorithm)).
-generalization(mechanics(gameBalance),mechanics(algorithm)).
+generalization(mechanics(phase),mechanics(ruleset)).
+generalization(mechanics(gameBalance),mechanics(ruleset)).
 
 generalization(mechanics(partnership),mechanics(teams)).
 generalization(mechanics(co-operativePlay),mechanics(teams)).
@@ -121,3 +121,12 @@ generalization(mechanics(variablePlayerPowers),mechanics(assymetry)).
 generalization(mechanics(memory),mechanics(goal)).
 generalization(mechanics(areaEnclosure),mechanics(goal)).
 generalization(mechanics(patternRecognition),mechanics(goal)).
+generalization(mechanics(playerElimination),mechanics(goal)).
+generalization(mechanics(resourceManagement),mechanics(goal)).
+generalization(mechanics(pickUpAndDelivery),mechanics(goal)).
+generalization(mechanics(areaControl),mechanics(goal)).
+
+generalization(mechanics(actionPrograming),mechanics(action)).
+generalization(mechanics(actionPrograming),mechanics(action)).
+
+/*Continuar a fazer as generalizações*/
