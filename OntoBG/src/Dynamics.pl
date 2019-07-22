@@ -57,9 +57,11 @@ generalization(dynamics(indirectEffect),dynamicsCategory(itentionOfUse)).
 generalization(dynamics(resourceExtinction),dynamicsCategory(itentionOfUse)).
 
 generalization(dynamics(countResources),dynamicsCategory(metaGame)).
+
 generalization(dynamics(distraction),dynamicsCategory(itentionOfUse)).
 generalization(dynamics(convince),dynamicsCategory(itentionOfUse)).
 generalization(dynamics(intimidate),dynamicsCategory(itentionOfUse)).
+
 generalization(dynamics(bluffing),dynamics(convince)).
 
 generalization(dynamics(rejectObjectives),dynamicsCategory(strategicChoices)).
@@ -78,8 +80,13 @@ generalization(dynamics(sacrifice),dynamicsCategory(actionBased)).
 
 generalization(dynamics(alliance),dynamics(grouping)).
 generalization(dynamics(oneVersusAll),dynamics(grouping)).
+
 generalization(dynamics(alliance),dynamics(allVersusOne)).
 
 generalization(dynamicsCategory(intentionOfUse),dynamicsCategory(actionBased)).
+
 generalization(dynamicsCategory(playingPatterns),dynamicsCategory(behaviour)).
 generalization(dynamicsCategory(strategicChoices),dynamicsCategory(behaviour)).
+
+/*partof*/
+partof(dynamics(deduction),dynamics(acquireInformation)).
