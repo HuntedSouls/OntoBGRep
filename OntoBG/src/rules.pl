@@ -1,5 +1,5 @@
 /*
-generalization(call(A,A1),call(B,B1)):- A\=B,A1\=B1. pq eu fiz isso??? não pode ter generalização circular
+generalization(call(A,A1),call(B,B1)):- A\=B,A1\=B1. pq eu fiz isso??? @?@ talvez constraint??
 
 generalization(A,B) = A is specific of B, or B is more general than A
 */
