@@ -23,12 +23,21 @@ mechHasDyn(Mech,[D|Ds]):-(Mech, D, mdRelation(Mech,D)) ; mechHasDyn(Mech,Ds).
 allMechHasDyn([],_).
 allMechHasDyn([M|Ms],D):- mechHasDyn(M,D), allMechHasDyn(Ms,D). 
 
-
 dynHasAest(Dyn, [A|As]):-(Dyn, A, daRelation(Dyn,A)) ; dynHasAest(Dyn,As).
 allDynHasAest([],_).
 allDynHasAest([D|Ds],A):- dynHasAest(D,A), allDynHasAest(Ds,A).
 
-isGame(M,D,A) :- mechIsThere(M),dynIsThere(D),aestIsThere(A), allMechHasDyn(M,D), allDynHasAest(D,A).
+dynHasMech(Dyn, [M|Ms]):-(Dyn, M, mdRelation(M,Dyn)) ; dynHasAest(Dyn,Ms).
+allDynHasMech([],_).
+allDynHasMech([D|Ds],M):- dynHasMech(D,M), allDynHasMech(Ds,M).
+
+aestHasDyn(Aest,[D|Ds]):-(Aest, D, daRelation(D,Aest)) ; aestHasDyn(Aest,Ds).
+allAestHasDyn([],_).
+allAestHasDyn([A|As],D):- aestHasDyn(A,D), allAestHasDyn(As,D). 
+
+
+isGame(M,D,A) :- mechIsThere(M),dynIsThere(D),aestIsThere(A),
+				 allMechHasDyn(M,D), allDynHasAest(D,A), allDynHasMech(D,M),allAestHasDyn(A,D).
 
 whatmech(D,A):- forall(isGame([mechanics(X)],D,A),writeln(X)).
 whatdyn(M,A):- forall(isGame(M,[dynamics(X)],A),writeln(X)).
