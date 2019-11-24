@@ -5,7 +5,6 @@ dynamics(reduceOptions).
 dynamics(acquireInformation).
 dynamics(combo).
 dynamics(gameStateChange).
-dynamics(deduction).
 dynamics(blocking).
 dynamics(sacrifice).
 
@@ -18,7 +17,7 @@ dynamics(allVersusOne).
 dynamics(intimidate).
 dynamics(convince).
 dynamics(bluffing).
-dynamics(distraction).
+dynamics(diversion).
 dynamics(countResources).
 
 /*playing patterns*/
@@ -38,6 +37,8 @@ dynamics(rejectObjectives).
 /* loose ones */
 dynamics(forcefullInterpretation).
 dynamics(selfObjective).
+dynamics(derived).
+dynamics(deduction).
 
 /* categories */
 dynamicsCategory(intentionOfUse).

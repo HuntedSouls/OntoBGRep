@@ -1,4 +1,69 @@
+/* actionBased */
+
+/* intentionOfUse */
+
+/* metaGame*/
+
+/* playingPatterns*/
+
+
+/* strategicChoices*/
+
+/* behaviour */
+
+/* indirectEffect */
+mdRelation(mechanics(action),dynamics(indirectEffect)).
+
+/* resourceExtinction */
+mdRelation(mechanics(resources),dynamics(resourceExtinction)).
+mdRelation(mechanics(stockHolding),dynamics(resourceExtinction)).
+mdRelation(mechanics(collection),dynamics(resourceExtinction)).
+mdRelation(mechanics(trading),dynamics(resourceExtinction)).
+mdRelation(mechanics(resourceManagement),dynamics(resourceExtinction)).
+
+/* reduceOptions*/
+mdRelation(mechanics(auction),dynamics(reduceOptions)).
+mdRelation(mechanics(poolBuilding),dynamics(reduceOptions)).
+mdRelation(mechanics(stockHolding),dynamics(reduceOptions)).
+mdRelation(mechanics(draft),dynamics(reduceOptions)).
+mdRelation(mechanics(trickTaking),dynamics(reduceOptions)).
+mdRelation(mechanics(lineDrawing),dynamics(reduceOptions)).
+mdRelation(mechanics(movement),dynamics(reduceOptions)).
+mdRelation(mechanics(pushYourLuck),dynamics(reduceOptions)).
+mdRelation(mechanics(tilePlacement),dynamics(reduceOptions)).
+
+/* acquireInformation*/
 mdRelation(mechanics(action),dynamics(acquireInformation)).
+
+/* combo */
+mdRelation(mechanics(action),dynamics(combo)).
+
+/* gameStateChange */
+mdRelation(mechanics(action),dynamics(gameStateChange)).
+
+/* blocking */
+mdRelation(mechanics(actionPrograming),dynamics(blocking)).
+mdRelation(mechanics(auction),dynamics(blocking)).
+mdRelation(mechanics(collection),dynamics(blocking)).
+mdRelation(mechanics(actionPrograming),dynamics(blocking)).
+mdRelation(mechanics(stockHolding),dynamics(blocking)).
+mdRelation(mechanics(draft),dynamics(blocking)).
+mdRelation(mechanics(trickTaking),dynamics(blocking)).
+mdRelation(mechanics(lineDrawing),dynamics(blocking)).
+mdRelation(mechanics(movement),dynamics(blocking)).
+mdRelation(mechanics(pressYourLuck),dynamics(blocking)).
+mdRelation(mechanics(secretUnitDeployment),dynamics(blocking)).
+mdRelation(mechanics(simultaneousActionSelection),dynamics(blocking)).
+mdRelation(mechanics(takeThat),dynamics(blocking)).
+mdRelation(mechanics(tilePlacement),dynamics(blocking)).
+mdRelation(mechanics(voting),dynamics(blocking)).
+
+mdRelation(mechanics(areaControll),dynamics(blocking)).
+mdRelation(mechanics(areaEnclosure),dynamics(blocking)).
+mdRelation(mechanics(píckUpAndDelivery),dynamics(blocking)).
+mdRelation(mechanics(playerElimination),dynamics(blocking)).
+
+
 
 mdRelation(mechanics(secretUnitDeployment),dynamics(deduction)).
 mdRelation(mechanics(simultaneousActionSelection),dynamics(deduction)).
@@ -34,7 +99,7 @@ mdRelation(mechanics(memory),dynamics(bluffing)).
 mdRelation(mechanics(action),dynamics(alliance)).
 mdRelation(mechanics(goals),dynamics(alliance)).
 
-mdRelation(mechanics(resources),dynamics(resourceExtinction)).
+
 
 mdRelation(mechanics(action),dynamics(actionPlanning)).
 

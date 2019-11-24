@@ -5,6 +5,8 @@ generalization(A,B) = A is specific of B, or B is more general than A
 */
 generalization(A,B):- generalization(A,C),generalization(C,B).
 
+partof(A,C):- partof(A,B),partof(B,C). /* está certo?*/
+
 /*
 partof(A,B) = A is part of B
 */
