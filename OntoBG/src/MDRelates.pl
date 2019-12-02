@@ -57,12 +57,11 @@ mdRelation(mechanics(simultaneousActionSelection),dynamics(blocking)).
 mdRelation(mechanics(takeThat),dynamics(blocking)).
 mdRelation(mechanics(tilePlacement),dynamics(blocking)).
 mdRelation(mechanics(voting),dynamics(blocking)).
-
 mdRelation(mechanics(areaControll),dynamics(blocking)).
 mdRelation(mechanics(areaEnclosure),dynamics(blocking)).
 mdRelation(mechanics(píckUpAndDelivery),dynamics(blocking)).
 mdRelation(mechanics(playerElimination),dynamics(blocking)).
-
+mdRelation(mechanics(timeTrack),dynamics(blocking)).
 
 
 mdRelation(mechanics(secretUnitDeployment),dynamics(deduction)).
