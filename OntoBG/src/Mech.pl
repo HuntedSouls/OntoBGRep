@@ -39,7 +39,7 @@ mechanics(voting).
 
 mechanics(goal).
 mechanics(areaControl).
-mechanics(areaEncolsure).
+mechanics(areaEnclosure).
 mechanics(memory).
 mechanics(patternRecognition).
 mechanics(pickUpAndDelivery).

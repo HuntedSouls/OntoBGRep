@@ -63,6 +63,73 @@ mdRelation(mechanics(píckUpAndDelivery),dynamics(blocking)).
 mdRelation(mechanics(playerElimination),dynamics(blocking)).
 mdRelation(mechanics(timeTrack),dynamics(blocking)).
 
+/* sacrifice */
+mdRelation(mechanics(commoditySpeculation),dynamics(sacrifice)).
+mdRelation(mechanics(tickTaking),dynamics(sacrifice)).
+mdRelation(mechanics(networkBuilding),dynamics(sacrifice)).
+mdRelation(mechanics(pressYourLuck),dynamics(sacrifice)).
+mdRelation(mechanics(tilePlacement),dynamics(sacrifice)).
+mdRelation(mechanics(trading),dynamics(sacrifice)).
+mdRelation(mechanics(areaControl),dynamics(sacrifice)).
+mdRelation(mechanics(areaEnclosure),dynamics(sacrifice)).
+mdRelation(mechanics(timeTrack),dynamics(sacrifice)).
+mdRelation(mechanics(variablePhaseOrder),dynamics(sacrifice)).
+
+/*one versus all*/
+mdRelation(mechanics(auction),dynamics(oneVersusAll)).
+mdRelation(mechanics(setCollection),dynamics(oneVersusAll)).
+mdRelation(mechanics(lineDrawing),dynamics(oneVersusAll)).
+mdRelation(mechanics(simultaneousActionSelection),dynamics(oneVersusAll)).
+mdRelation(mechanics(takeThat),dynamics(oneVersusAll)).
+mdRelation(mechanics(voting),dynamics(oneVersusAll)).
+mdRelation(mechanics(areaControl),dynamics(oneVersusAll)).
+mdRelation(mechanics(areaEnclosure),dynamics(oneVersusAll)).
+mdRelation(mechanics(playerElimination),dynamics(oneVersusAll)).
+
+/* alliance */
+mdRelation(mechanics(collection),dynamics(alliance)).
+mdRelation(mechanics(commoditySpeculation),dynamics(alliance)).
+mdRelation(mechanics(lineDrawing),dynamics(alliance)).
+mdRelation(mechanics(simultaneousActionSelection),dynamics(alliance)).
+mdRelation(mechanics(takeThat),dynamics(alliance)).
+mdRelation(mechanics(voting),dynamics(alliance)).
+mdRelation(mechanics(areaControl),dynamics(alliance)).
+mdRelation(mechanics(pickUpAndDelivery),dynamics(alliance)).
+mdRelation(mechanics(assimetry),dynamics(alliance)).
+
+/* all versus one */
+
+/* Intimidate */
+mdRelation(mechanics(auction),dynamics(intimidate)).
+mdRelation(mechanics(chitPull),dynamics(intimidate)).
+mdRelation(mechanics(commoditySpeculation),dynamics(intimidate)).
+mdRelation(mechanics(expression),dynamics(intimidate)).
+mdRelation(mechanics(acting),dynamics(intimidate)).
+mdRelation(mechanics(roleplaying),dynamics(intimidate)).
+mdRelation(mechanics(singing),dynamics(intimidate)).
+mdRelation(mechanics(storytelling),dynamics(intimidate)).
+mdRelation(mechanics(gamble),dynamics(intimidate)).
+mdRelation(mechanics(trickTaking),dynamics(intimidate)).
+mdRelation(mechanics(movement),dynamics(intimidate)).
+mdRelation(mechanics(pressYourLuck),dynamics(intimidate)).
+mdRelation(mechanics(secretUnitDeployment),dynamics(intimidate)).
+mdRelation(mechanics(takeThat),dynamics(intimidate)).
+mdRelation(mechanics(trading),dynamics(intimidate)).
+mdRelation(mechanics(voting),dynamics(intimidate)).
+mdRelation(mechanics(areaControl),dynamics(intimidate)).
+mdRelation(mechanics(areaEnclosure),dynamics(intimidate)).
+mdRelation(mechanics(memory),dynamics(intimidate)).
+mdRelation(mechanics(playerElimination),dynamics(intimidate)).
+mdRelation(mechanics(gameBalance),dynamics(intimidate)).
+mdRelation(mechanics(variablePhaseOrder),dynamics(intimidate)).
+mdRelation(mechanics(teams),dynamics(intimidate)).
+mdRelation(mechanics(coopPlay),dynamics(intimidate)).
+mdRelation(mechanics(partnership),dynamics(intimidate)).
+
+/* convince */
+
+
+
 
 mdRelation(mechanics(secretUnitDeployment),dynamics(deduction)).
 mdRelation(mechanics(simultaneousActionSelection),dynamics(deduction)).
